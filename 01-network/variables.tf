@@ -4,9 +4,9 @@ variable "subscription_id" {
 }
 
 variable "location" {
-  description = "Region de Azure. Azure for Students restringe regiones; verifique cuales permite su suscripcion."
+  description = "Region de Azure. Azure for Students solo permite: mexicocentral, chilecentral, canadacentral, francecentral, northcentralus."
   type        = string
-  default     = "eastus2"
+  default     = "canadacentral"
 }
 
 variable "resource_group_name" {
