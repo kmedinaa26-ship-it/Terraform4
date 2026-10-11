@@ -10,9 +10,11 @@ Se construye paso a paso, un proyecto Terraform por etapa:
 | 1 | `01-network` - VNet, subredes, NSG, zonas DNS privadas | desplegado (21 recursos) |
 | 2 | `02-data` - PostgreSQL y Storage con Private Endpoints | desplegado (6 recursos) |
 | 3 | `03-compute` - App Service, VM worker, Managed Identities | desplegado (9 recursos) |
-| 4 | `04-bastion` - Azure Bastion | codigo listo, por desplegar |
+| 4 | `04-bastion` - Azure Bastion | desplegado (2 recursos) |
 
 Requisitos: Terraform >= 1.6, Azure CLI (`az login`).
+
+La evidencia de validacion y los problemas encontrados estan en [`docs/validacion.md`](docs/validacion.md).
 
 ## Region
 
