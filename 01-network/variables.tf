@@ -6,13 +6,13 @@ variable "subscription_id" {
 variable "location" {
   description = "Region de Azure. Azure for Students solo permite: mexicocentral, chilecentral, canadacentral, francecentral, northcentralus."
   type        = string
-  default     = "canadacentral"
+  default     = "mexicocentral"
 }
 
 variable "resource_group_name" {
   description = "Nombre del grupo de recursos compartido por todos los proyectos."
   type        = string
-  default     = "rg-lz-prod"
+  default     = "rg-lz-mx"
 }
 
 variable "vnet_name" {

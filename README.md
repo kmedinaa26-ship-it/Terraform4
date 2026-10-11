@@ -19,7 +19,15 @@ Requisitos: Terraform >= 1.6, Azure CLI (`az login`).
 La suscripcion Azure for Students solo permite desplegar en: `mexicocentral`,
 `chilecentral`, `canadacentral`, `francecentral` y `northcentralus`
 (politica "Allowed resource deployment regions"). Con `eastus2` Azure responde
-`RequestDisallowedByAzure`. Este proyecto usa **`canadacentral`**.
+`RequestDisallowedByAzure`. Este proyecto usa **`mexicocentral`** (grupo de recursos `rg-lz-mx`).
+
+`canadacentral` tambien esta permitida, pero no tiene capacidad de VM para esta
+suscripcion: `Standard_B2ats_v2`, `Standard_B2as_v2` y `Standard_B1s` fallaron con
+`SkuNotAvailable`. Por eso se migro a `mexicocentral`.
+
+Nota: no trabaje dentro de `C:\Windows\System32` (requiere administrador y
+provoca errores de acceso en el estado de Terraform). Clone el repo en su
+carpeta de usuario.
 
 Para consultar las regiones permitidas:
 
